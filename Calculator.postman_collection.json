@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "13bd96d9-492b-414c-8085-d03f0962382f",
+		"name": "Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4452317"
+	},
+	"item": [
+		{
+			"name": "BinaryConverter",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "gw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "su",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"method\": \"convert\",\r\n  \"params\": [{\"number\":55}],\r\n  \"id\": 1, \r\n  \"version\": \"2.0\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8180/pc/service/edge/number/number",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"pc",
+						"service",
+						"edge",
+						"number",
+						"number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PrimeNumber",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "gw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "su",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"method\": \"checkIsPrime\",\r\n  \"params\": [{\"number\":17}],\r\n  \"id\": 1, \r\n  \"version\": \"2.0\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8180/pc/service/edge/number/prime",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"pc",
+						"service",
+						"edge",
+						"number",
+						"prime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PrimeNumber Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "gw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "su",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"method\": \"checkIsPrime\",\r\n  \"params\": [{\"number\":17}],\r\n  \"id\": 1, \r\n  \"version\": \"2.0\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8180/pc/service/edge/number/number",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"pc",
+						"service",
+						"edge",
+						"number",
+						"number"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HexadecimalCoverter",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "gw",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "su",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"method\": \"convert\",\r\n  \"params\": [{\"number\":55}],\r\n  \"id\": 1, \r\n  \"version\": \"2.0\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8180/pc/service/edge/number/hexadecimal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8180",
+					"path": [
+						"pc",
+						"service",
+						"edge",
+						"number",
+						"hexadecimal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
